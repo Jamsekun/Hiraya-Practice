@@ -135,8 +135,21 @@ aside {
 
 }
 .rectangle {
-  width: 69rem;
-  height: 200px;
+  width: 40rem;
+  height: 240px;
   background-color: var(--gradient-secondary);
   margin: 10px;
+  margin-left: 15rem;
+  margin-right: auto;
+  display:block;
+  border: 5px solid white;
+  border-radius: 10px;
+
+}
+
+.text-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
