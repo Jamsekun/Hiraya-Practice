@@ -1,11 +1,12 @@
 :root {
   font-family: Arial, sans-serif;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f1f1ff;
+  --text-primary: #019fa2;
+  --text-secondary: #0e436b;
+  --gradient-primary: #019fa2;
+  --gradient-secondary: #0e436b;
   font-size: 16px;
-
 }
 
 body {
@@ -26,10 +27,19 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #5ec7da;
 }
+
 main {
   margin-left: 5rem;
   padding: 1rem;
 
+}
+
+.menu {
+  /* background-image: url(https://www.hirayawater.com/img/rainsplash.685a8d53.png); */
+  background: linear-gradient(to bottom, white, #c5ece9, white);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 .navbar {
@@ -61,11 +71,11 @@ main {
 .nav-link {
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 2.5rem;
   padding-left: 2rem; /* DINAGDAG KO TO HAHA, pero idk pano palakihin ung icon initially */
   color: var(--text-primary);
   text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
+  filter: grayscale(100%) opacity(0.95);
   transition: 600ms;
 }
 
@@ -90,6 +100,8 @@ main {
 
 .link-text {
   display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 .fa-primary {
@@ -110,4 +122,21 @@ aside {
 
 .svg-inline--fa {
   width: 25%;
+}
+
+.box {
+  width: 12rem;
+  height: 16rem;
+  background: linear-gradient(to bottom, var(--gradient-primary), var(--gradient-secondary));
+  display: inline-block;
+  margin: 10px;
+  border: 5px solid white;
+  border-radius: 10px;
+
+}
+.rectangle {
+  width: 69rem;
+  height: 200px;
+  background-color: var(--gradient-secondary);
+  margin: 10px;
 }
